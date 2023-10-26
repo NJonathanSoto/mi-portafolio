@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+header img {
+    width: 70px;
+}
+.barra-navegacion ul {
+    list-style: none;
+}
+.barra-navegacion ul li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+.barra-navegacion ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+.barra-navegacion ul li a:hover {
+    border-bottom: 4px solid black;
+    transition: 0.1s;
+}
+section, footer {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+.sobre-mi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sobre-mi-descripcion, .sobre-mi-foto {
+    width: 400px;
+}
+.sobre-mi-descripcion {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+.descripcion-uno {
+    font-size: 40px;
+}
+#mi-nombre {
+    color: #26A699;
+}
+.descripcion-dos {
+    font-size: 25px;
+}
+.descripcion-tres {
+    font-size: 18px;
+}
+.sobre-mi-foto {
+    display: flex;
+    justify-content: center;
+}
+.sobre-mi-foto img {
+    width: 90%;
+}
+.cursos h2 {
+    text-align: center;
+    padding-bottom: 0.3rem;
+}
+.certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.certificados img {
+    width: 300px;
+    margin: 1rem;
+    border: 2px solid black;
+}
+.certificados img:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 6px 11px 0px #26A699;
+    transition: 0.1s;
+}
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.mi-form {
+    width: 300px;
+    padding: 0.7rem;
+    margin: auto;
+    text-align: center;
+}
+input, #comentario {
+    padding: 0.4rem;
+    margin: 0.2rem;
+    border: none;
+    border-radius: 10px;
+    background: gainsboro;
+    font-size: 14px;
+    font-weight: bold;
+}
+#nombre, #email, #comentario {
+    width: 98%;
+}
+#comentario {
+    height: 4rem;
+}
+#btn {
+    width: 40%;
+    background: #26A699;
+    color: white;
+}
+#btn:hover {
+    background: black;
+    color: #26A699;
+}
+footer h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+footer div {
+    text-align: center;
+}
+footer div img {
+    width: 45px;
+    margin: 5px;
+    background: white;
+    border-radius: 50%;
+}
+footer div img:hover {
+    box-shadow: 0px 6px 11px 0px #26A699;
+    transition: 0.1s;
+}
