@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -20,31 +20,32 @@
         </nav>
     </header>
     <main>
-        <section class="sobre-mi">
+        <section class="sobre-mi" id="sobre-mi">
             <div class="sobre-mi-descripcion">
-                <p>Hola, soy Nico</p>
-                <p>Estudiante de desarrollo web</p>
-                <p>Me gustaría poder trabajar como desarrollador de forma independiente o para alguna empresa.</p>
+                <p class="descripcion-uno">Hola, <span id="mi-nombre">soy Nico</span></p>
+                <p class="descripcion-dos">Estudiante de desarrollo web</p>
+                <p class="descripcion-tres">Me gustaría poder trabajar como desarrollador de forma independiente o para alguna empresa.</p>
             </div>
             <div class="sobre-mi-foto">
                 <img src="img/mifotoperfil.png" alt="">
             </div>
         </section>
-        <section class="cursos">
+        <section class="cursos" id="cursos">
             <h2>Mis certificaciones</h2>
             <div class="certificados">
-                <a href="#"><img src="img/certificado-html-uno.png" alt=""></a>
-                <a href="#"><img src="img/certificado-html-dos.png" alt=""></a>
-                <a href="#"><img src="img/certificado-javascript.png" alt=""></a>
+                <a href="#"><img src="img/certificado-html-uno.png" alt="certificado de html y css (1)"></a>
+                <a href="#"><img src="img/certificado-html-dos.png" alt="certificado de html y css (2)"></a>
+                <a href="#"><img src="img/certificado-javascript.png" alt="certificado de desarrollo con javascript"></a>
             </div>
         </section>
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <h2>Dejáme un mensaje</h2>
-            <form class="mi-form" id="form">
+            <form method="get" class="mi-form" id="form">
                 <input type="text" name="user_name" id="nombre" placeholder="Nombre">
                 <input type="email" name="user_email" id="email" placeholder="Email">
                 <textarea name="user_comment" id="comentario" placeholder="Escribime"></textarea>
                 <input type="submit" value="Enviar" id="btn">
+                <div id="texto"></div>
             </form>
         </section>
     </main>
@@ -54,9 +55,8 @@
             <a href="https://www.facebook.com/nicolas.soto.980315" target="_blank"><img src="icons/facebook.png" alt="facebook del autor"></a>
             <a href="https://www.linkedin.com/in/nicol%C3%A1s-soto-webdeveloper/" target="_blank"><img src="icons/linkedin.png" alt="linkedin del autor"></a>
         </div>
-    </footer> 
+    </footer>
     <script>
-
         let formulario = document.querySelector('#form');
         let nombre = document.querySelector('#nombre');
         let email = document.querySelector('#email');
@@ -70,7 +70,6 @@
                 e.preventDefault();
             }
         });
-
     </script>
 </body>
 </html>
